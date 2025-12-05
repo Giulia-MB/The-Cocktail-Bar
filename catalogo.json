@@ -3,95 +3,95 @@
         "id": 1,
         "nome": "Mojito Elegante",
         "tipo": "Clássico",
-        "ingredientes": ["Rum Branco", "Açúcar Demerara", "Suco de Limão Tahiti", "Água com Gás", "Hortelã"],
-        "preparo": "Macerar hortelã, açúcar e limão. Adicionar rum e gelo picado. Completar com água com gás e decorar.",
+        "ingredientes": ["1 dose de Rum Branco", "1 colher (sopa) de açúcar Demerara", "Suco de 1 limão Tahiti", "1/2 copo de água com gás (cerca de 100 ml)", "1 ramo de hortelã"],
+        "preparo": "Colocar o açúcar, o limão e a hortelã no copo onde será servido o drink. Amassar bem a hortelã. Adicionar rum e gelo picado. Completar com água com gás e decorar.",
         "imagem": "assets/mojito.jpeg"
     },
     {
         "id": 2,
         "nome": "Pina Colada Cream",
         "tipo": "Tropical",
-        "ingredientes": ["Rum Branco", "Leite de Coco", "Suco de Abacaxi", "Gelo"],
-        "preparo": "Bater todos os ingredientes no liquidificador com gelo até ficar cremoso. Servir em taça decorada.",
+        "ingredientes": ["1 e 1/2 doses de Rum Branco", "1 dose de leite de coco", "3 doses de suco de abacaxi", "1 dose de leite condensado", "6 pedras de gelo"],
+        "preparo": "Bater todos os ingredientes no liquidificador (ou coqueteleira) com gelo até ficar cremoso. Servir em taça decorada com um pedaço de abacaxi.",
         "imagem": "assets/pinacolada.jpg"
     },
     {
         "id": 3,
         "nome": "Refrescante de Morango",
         "tipo": "Sem Álcool",
-        "ingredientes": ["Morango", "Mel", "Suco de Laranja", "Gelo"],
-        "preparo": "Bater morangos, mel e suco no liquidificador. Servir imediatamente.",
+        "ingredientes": ["1 xícara de morangos frescos", "1 colher (sopa) de mel", "300 ml de suco de laranja", "Gelo a gosto"],
+        "preparo": "Bater morangos picados, mel e suco no liquidificador até obter uma mistura homogênea. Em um copo alto, adicionar bastante gelo e despejar o suco. Decorar o copo com um morango. Servir imediatamente.",
         "imagem": "assets/morango.jpg"
     },
     {
         "id": 4,
         "nome": "Old Fashioned",
         "tipo": "Clássico",
-        "ingredientes": ["Bourbon Whiskey", "Açúcar", "Angostura Bitters", "Casca de Laranja"],
-        "preparo": "Misturar açúcar e bitters. Adicionar whiskey e gelo grande. Mexer até gelar. Decorar com casca de laranja.",
+        "ingredientes": ["60 ml de Bourbon Whiskey", "1 cubo de açúcar (ou 10 ml de xarope simples)", "2 a 3 lances (dashes) de Angostura Bitter aromático", "Um toque de água ou soda (5 ml)", "Gelo", "1 casca de laranja", "1 cereja maraschino"],
+        "preparo": "Colocar o cubo de açúcar (ou o xarope) no fundo de um copo baixo. Adicionar os lances de Angostura bitter sobre o açúcar. Acrescentar um toque de água (ou soda) e macerar suavemente o cubo de açúcar até dissolver. Adicionar whiskey e alguns cubos de gelo. Mexer até gelar. Decorar com casca de laranja e adicionar a cereja.",
         "imagem": "assets/oldfashioned.jpg"
     },
     {
         "id": 5,
         "nome": "Caipirinha Clássica",
         "tipo": "Tropical",
-        "ingredientes": ["Cachaça", "Limão Tahiti", "Açúcar"],
-        "preparo": "Macerar limão e açúcar. Adicionar cachaça e gelo. Misturar bem.",
+        "ingredientes": ["50-60 ml de cachaça branca de boa qualidade", "1 Limão Tahiti", "2 colheres (sopa) de açúcar", "Gelo a gosto"],
+        "preparo": "Cortar o limão ao meio, remover a parte branca central (o miolo) para reduzir o amargor. Cortar cada metade do limão em gomos (fatias). Em um copo baixo e resistente, macerar o limão e o açúcar. Adicionar cachaça e gelo. Misturar bem, decorar com uma rodela de limão e servir.",
         "imagem": "assets/caipirinha.jpeg"
     },
     {
         "id": 6,
         "nome": "Espresso Martini",
         "tipo": "Aperitivo",
-        "ingredientes": ["Vodka", "Licor de Café", "Xarope de Açúcar", "Café Espresso"],
-        "preparo": "Bater todos os ingredientes com gelo. Coar para uma taça Martini. Decorar com grãos de café.",
+        "ingredientes": ["45 ml de Vodka", "25 ml de Licor de Café", "5 a 10 ml de Xarope de Açúcar", "25 ml de Café Espresso", "Gelo a gosto"],
+        "preparo": "Colocar gelo na taça de coquetel (tipo martini) para resfriá-la e, em seguida, descartar o gelo e a água. Bater todos os ingredientes com gelo. Coar a mistura em uma peneira fina diretamente para a taça gelada. Decorar com grãos de café flutuando sobre a espuma.",
         "imagem": "assets/espressomartini.jpeg"
     },
     {
         "id": 7,
         "nome": "Virgin Mary",
         "tipo": "Sem Álcool",
-        "ingredientes": ["Suco de Tomate", "Molho Inglês", "Limão", "Pimenta do Reino"],
-        "preparo": "Misturar todos os ingredientes em um copo com gelo. Temperar a gosto. Decorar com aipo.",
+        "ingredientes": ["120 ml de Suco de Tomate", "20 ml de Molho Inglês", "20 ml de suco de Limão", "1 pitada de Pimenta do Reino moída", "3 dashes de molho de pimenta", "1 colher (chá) de rábano silvestre", "1 pitada de Celery Salt", "1 palito de aipo", "1 pedaço de limão", "Cubos de gelo"],
+        "preparo": "Misturar todos os ingredientes em um copo alto com gelo. Temperar a gosto. Decorar com aipo e com 1 pedaço de limão.",
         "imagem": "assets/virginmary.jpeg"
     },
     {
         "id": 8,
         "nome": "Daiquiri de Morango",
         "tipo": "Tropical",
-        "ingredientes": ["Rum Branco", "Morango", "Suco de Limão", "Xarope de Açúcar"],
-        "preparo": "Bater no liquidificador com gelo até ficar homogêneo e cremoso. Servir gelado.",
+        "ingredientes": ["60 ml de Rum Branco", "4 Morangos", "30 ml de Suco de Limão", "30 ml de Xarope de Açúcar", "Gelo a gosto"],
+        "preparo": "Em uma coqueteleira, macerar os morangos e o xarope de  açúcar. Adicionar o rum, suco de limão e gelo e bater no liquidificador (ou coqueteleira) até ficar homogêneo e cremoso. Peneirar a bebida 2 vezes. Servir gelado em um copo alto ou em uma taça de martini.",
         "imagem": "assets/daiquiri.jpg"
     },
     {
         "id": 9,
         "nome": "Margarita Tradicional",
         "tipo": "Clássico",
-        "ingredientes": ["Tequila", "Licor de Laranja", "Suco de Limão"],
-        "preparo": "Coquetelaria agitada com gelo. Servir em taça com borda de sal.",
+        "ingredientes": ["50 ml de Tequila prata", "25 ml de Licor de Laranja", "25 ml de Suco de Limão", "Sal grosso ou sal marinho (para a borda)", "Gelo", "1 rodela ou fatia de limão para decorar"],
+        "preparo": "Umedecer a borda da taça com um gomo de limão e mergulhar a borda em um prato com sal, cobrindo uniformemente. Agitar os ingredientes em uma coqueteleira. Coar a mistura da coqueteleira para a taça preparada (sem gelo). Decorar com uma rodela ou fatia de limão na borda da taça.",
         "imagem": "assets/margarita.jpg"
     },
     {
         "id": 10,
         "nome": "Aperol Spritz",
         "tipo": "Aperitivo",
-        "ingredientes": ["Aperol", "Prosecco", "Água com Gás", "Rodela de Laranja"],
-        "preparo": "Adicionar gelo a uma taça. Colocar Prosecco, Aperol e um toque de água com gás. Decorar com laranja.",
+        "ingredientes": ["60 ml de Aperol", "90 ml de Prosecco", "30 ml de Água com Gás", "Rodela de Laranja", "Gelo a gosto"],
+        "preparo": "Adicionar gelo a uma taça de vinho grande. Colocar Prosecco, Aperol e um toque de água com gás. Decorar com a rodela de laranja.",
         "imagem": "assets/aperolspritz.jpg"
     },
     {
         "id": 11,
         "nome": "Limonada Suíça",
         "tipo": "Sem Álcool",
-        "ingredientes": ["Limões (com casca)", "Água", "Açúcar", "Leite Condensado"],
-        "preparo": "Bater limões, água e açúcar rapidamente. Coar. Bater novamente com leite condensado e gelo.",
+        "ingredientes": ["3 Limões (com casca)", "2 copos de água (300 ml)", "1 colher (sopa) de açúcar", "2 doses de leite condensado", "Gelo picado"],
+        "preparo": "Partir os limões ao meio, tirar a parte branca e partir ao meio de novo. Bater limões, água, açúcar, gelo e leite condensado rapidamente. Coar e servir",
         "imagem": "assets/limonadasuica.jpg"
     },
     {
         "id": 12,
         "nome": "Negroni",
         "tipo": "Clássico",
-        "ingredientes": ["Gin", "Campari", "Vermute Doce"],
+        "ingredientes": ["30 ml de Gin", "30 ml de Campari", "30 ml de Vermute Doce", "Gelos em cubo", "1 rodela ou casca de laranja para decorar"],
         "preparo": "Misturar todos os ingredientes com gelo. Coar para um copo baixo com gelo. Decorar com casca de laranja.",
         "imagem": "assets/negroni.jpg"
     },
@@ -99,32 +99,32 @@
         "id": 13,
         "nome": "Cosmopolitan",
         "tipo": "Aperitivo",
-        "ingredientes": ["Vodka Citrus", "Licor de Laranja", "Suco de Cranberry", "Suco de Limão"],
-        "preparo": "Bater os ingredientes com gelo na coqueteleira. Coar para uma taça Martini.",
+        "ingredientes": ["40 ml de Vodka Citrus", "15 ml de Licor de Laranja", "30 ml de Suco de Cranberry", "15 ml de Suco de Limão"],
+        "preparo": "Deixar uma taça de martini na geladeira ou freezer, ou enchê-la com gelo e água e descartar antes de servir. Bater os ingredientes com gelo na coqueteleira. Coar para a taça gelada. Decorar o coquetel com uma rodela ou twist (casca torcida) de limão.",
         "imagem": "assets/cosmopolitan.png"
     },
     {
         "id": 14,
         "nome": "Sex on the Beach",
         "tipo": "Tropical",
-        "ingredientes": ["Vodka", "Licor de Pêssego", "Suco de Laranja", "Suco de Cranberry"],
-        "preparo": "Misturar vodka, licor e suco de laranja em um copo alto com gelo. Adicionar o cranberry por último para o efeito em camadas.",
+        "ingredientes": ["40 ml de de Vodka", "20 ml de Licor de Pêssego", "40 ml de Suco de Laranja", "40 ml de Suco de Cranberry", "Gelo a gosto", "Fatia de laranja e cereja para decorar"],
+        "preparo": "Misturar vodka, licor e suco de laranja em um copo alto com gelo. Adicionar o cranberry por último para o efeito em camadas. Decorar com fatia de laranja na borda",
         "imagem": "assets/sexonthebeach.jpg"
     },
     {
         "id": 15,
         "nome": "Chá Gelado de Pêssego",
         "tipo": "Sem Álcool",
-        "ingredientes": ["Chá Preto Forte", "Xarope de Pêssego", "Rodelas de Pêssego", "Gelo"],
-        "preparo": "Misturar o chá frio com o xarope. Servir em copo alto com muito gelo e pêssegos frescos.",
+        "ingredientes": ["4 sachês de Chá Preto Forte", "4 xícaras (chá) de água fervente", "2 pêssegos maduros", "3 colheres (sopa) de açúcar", "Gelo a gosto", "Folhas de hortelã"],
+        "preparo": "Em uma chaleira, em fogo médio, aquecer a água até ferver. Desligar o fogo e adicionar os sachês para infusionar por cerca de 6 minutos. Adicionar o açúcar. Descascar e picar os pêssegos, bater os pedaços no liquidificador ou cortar e amassar bem. Acrescentar o purê de pêssego ao chá-preto e levar à geladeira por cerca de 1h30. Servir em copo alto com muito gelo e pêssegos frescos. Decorar com folhas de hortelã.",
         "imagem": "assets/chagelado.jpg"
     },
     {
         "id": 16,
         "nome": "Manhattan",
         "tipo": "Aperitivo",
-        "ingredientes": ["Vermute doce", "Bourbon", "Angostura", "Gelo", "Cereja"],
-        "preparo": "Colocar uma taça no freezer por 20 minutos. Pegar um copo alto e colocar o vermute e o Bourbon (duas medidas de Bourbon para uma de vermute). Acrescentar cinco jatos de angostura e gelo. Mexer bem os ingreditentes. Colocar o drinque coado na taça e deocrar com uma cereja.",
+        "ingredientes": ["30 ml de Vermute doce", "60 ml de Whiskey Bourbon", "2 dashes (gotas) de Angostura bitters", "Gelo", "1 Cereja maraschino ou Luxardo para guarnição", "Twist (casca torcida) de limão ou laranja"],
+        "preparo": "Colocar uma taça no freezer por 20 minutos. Pegar um copo alto e colocar o vermute e o Bourbon. Acrescentar angostura e gelo. Mexer bem os ingreditentes. Coar a mistura para a taça gelada. Finalizar mergulhando uma cereja no coquetel ou adicionando um twist de casca de cítrico na borda da taça.",
         "imagem": "assets/manhattan.jpg"
     }
 ]

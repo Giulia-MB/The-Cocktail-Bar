@@ -3,54 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🍸 Catálogo Elegante de Coquetéis</title>
+    <title>🍸Coquetéis - Catálogo de receitas "The Cocktail Bar"</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <link rel="stylesheet" href="style.css">
-    
+    <!-- Configuração do Tailwind para Cores e Fontes -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
                     colors: {
-                        'primary': '#ca6212',//laranja mais claro
-                        'secondary': '#454545',//preto
-                        'accent': '#C76E00',//laranja mais escuro
+                        'primary': '#ca6212', // Laranja principal
+                        'secondary': '#454545', // Fundo (Preto/Cinza escuro)
+                        'accent': '#C76E00', // Laranja mais escuro
+                        'light-gray': '#f5f5f5', // Para o fundo da janela de preparo
                     }
                 }
             }
         }
     </script>
+    <!-- Incluindo a fonte Inter (usando Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #454545; /* cor secundária */
+            color: #ca6212; /* cor primária */
+        }
+        .cocktail-image {
+            object-fit: cover;
+            width: 100%;
+            height: 200px; /* Altura fixa para as imagens */
+        }
+        .cocktail-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(199, 110, 0, 0.5), 0 4px 6px -2px rgba(199, 110, 0, 0.2);
+        }
+    </style>
 </head>
-<body class="bg-secondary text-primary font-sans">
+<body class="font-sans">
 
+    <!-- Cabeçalho -->
     <header class="bg-primary text-secondary shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <h1 class="text-3xl font-bold tracking-wider">🍹 The Cocktail Bar</h1>
-            <nav class="space-x-4 text-lg">
-                <a href="index.html" class="hover:text-accent transition duration-300">Catálogo</a>
-                <a href="sobre.html" class="hover:text-accent transition duration-300">Sobre</a>
-                <a href="contato.html" class="hover:text-accent transition duration-300">Contato</a>
+            <nav class="space-x-4 text-lg hidden sm:block">
+                <a href="index.html" class="hover:text-white transition duration-300">Catálogo</a>
+                <a href="sobre.html" class="hover:text-white transition duration-300">Sobre</a>
+                <a href="contato.html" class="hover:text-white transition duration-300">Contato</a>
             </nav>
         </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <h2 class="text-4xl font-extrabold text-primary mb-8 text-center">Descubra Seus Coquetéis Favoritos</h2>
+        <h2 class="text-4xl font-extrabold text-primary mb-8 text-center">Saiba como preparar seu coquetéis favoritos!</h2>
         
+        <!-- Espaço para filtros e pesquisa -->
         <div class="flex flex-col md:flex-row gap-4 mb-10">
             <input 
                 type="text" 
-                id="search-input" 
+                id="input-busca" 
                 placeholder="Busque por nome ou ingrediente..." 
-                class="flex-grow p-3 border-2 border-accent rounded-lg shadow-md focus:ring-accent focus:border-accent transition duration-300 bg-white"
+                class="flex-grow p-3 border-2 border-accent rounded-lg shadow-md focus:ring-accent focus:border-accent transition duration-300 bg-white text-secondary"
                 oninput="filtrarCatalogo()"
             >
             
             <select 
-                id="filter-select" 
-                class="p-3 border-2 border-accent rounded-lg shadow-md focus:ring-accent focus:border-accent transition duration-300 bg-white md:w-56"
+                id="select-filtro" 
+                class="p-3 border-2 border-accent rounded-lg shadow-md focus:ring-accent focus:border-accent transition duration-300 bg-white text-secondary md:w-56"
                 onchange="filtrarCatalogo()"
             >
                 <option value="">Filtrar por Tipo (Todos)</option>
@@ -61,17 +84,66 @@
             </select>
         </div>
 
-        <div id="catalogue-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            </div>
+        <!-- Container do Catálogo -->
+        <div id="container-catalogo" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Os cards serão injetados aqui pelo JavaScript -->
+        </div>
         
-        <p id="no-results" class="text-center text-xl text-primary mt-10 hidden">
+        <!-- Mensagem quando o usuário digitar alguma coisa que não existe no catálogo -->
+        <p id="sem-resultados" class="text-center text-xl text-primary mt-10 hidden">
             Nenhum coquetel encontrado com os critérios de busca. 😔
         </p>
     </main>
     
+    <!-- Rodapé-->
     <footer class="bg-primary text-secondary py-6 mt-10">
         <p class="text-center text-sm">© 2025 The Cocktail Bar Project. Desenvolvido para fins acadêmicos.</p>
     </footer>
+
+    <!-- Card de preparo-->
+    <div id="card-preparo" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden items-center justify-center p-4" onclick="closePreparationModal(event)">
+        
+        <!-- Conteúdo do Card -->
+        <div class="bg-light-gray text-secondary w-full max-w-2xl max-h-[90vh] rounded-xl shadow-2xl overflow-y-auto transform transition-all duration-300 scale-95 opacity-0" id="area-conteudo-card" onclick="event.stopPropagation()">
+            
+            <!-- Cabeçalho do Card de Preparo -->
+            <div class="bg-primary p-6 rounded-t-xl sticky top-0 z-10 shadow-md">
+                <h3 id="nome-drink-card" class="text-3xl font-extrabold text-secondary mb-1">Nome do Drink</h3>
+                <p id="categoria-drink-card" class="text-sm font-semibold text-secondary opacity-80">Categoria: Clássico</p>
+                <button 
+                    onclick="closePreparationModal()" 
+                    class="absolute top-4 right-4 text-secondary hover:text-white transition duration-200 p-2 rounded-full hover:bg-secondary/20"
+                    aria-label="Fechar Modal"
+                >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            
+            <!-- Card do drink -->
+            <div class="p-6 space-y-8">
+                
+                <!-- Imagem do Drink -->
+                <img id="imagem-drink-card" src="" alt="Imagem do Coquetel" class="w-full h-64 object-cover rounded-lg shadow-md mb-4" />
+
+                <!-- Ingredientes -->
+                <div>
+                    <h4 class="text-2xl font-bold text-accent mb-3 border-b-2 border-accent/50 pb-2">Ingredientes</h4>
+                    <ul id="lista-ingredientes-card" class="list-disc ml-6 space-y-2 text-gray-700">
+                        <!-- Os itens do json são passados pra cá -->
+                    </ul>
+                </div>
+                
+                <!-- Como preparar -->
+                <div>
+                    <h4 class="text-2xl font-bold text-accent mb-3 border-b-2 border-accent/50 pb-2">Modo de Preparo</h4>
+                    <ol id="lista-preparo-card" class="list-decimal ml-6 space-y-3 text-gray-700">
+                        <!-- Passos do modo de preparo que estão no JSON virão pra cá -->
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

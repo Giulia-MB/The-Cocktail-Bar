@@ -1,0 +1,18 @@
+/* Este arquivo é reservado para estilos globais que não são facilmente 
+   aplicáveis via classes Tailwind. */
+
+/* Importação de Fontes Elegantes (Opcional) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
+
+/* Sobrescrevendo as fontes padrões definidas no index.html */
+.font-sans {
+    font-family: 'Roboto', sans-serif;
+}
+.font-extrabold {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Adicionando um pequeno efeito visual aos inputs no foco */
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 2px rgba(109, 89, 122, 0.5); /* Cor Accent com transparência */
+}

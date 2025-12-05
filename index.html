@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍸 Catálogo Elegante de Coquetéis</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#ca6212',//laranja mais claro
+                        'secondary': '#454545',//preto
+                        'accent': '#C76E00',//laranja mais escuro
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-secondary text-primary font-sans">
+
+    <header class="bg-primary text-secondary shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold tracking-wider">🍹 The Cocktail Bar</h1>
+            <nav class="space-x-4 text-lg">
+                <a href="index.html" class="hover:text-accent transition duration-300">Catálogo</a>
+                <a href="sobre.html" class="hover:text-accent transition duration-300">Sobre</a>
+                <a href="contato.html" class="hover:text-accent transition duration-300">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <h2 class="text-4xl font-extrabold text-primary mb-8 text-center">Descubra Seus Coquetéis Favoritos</h2>
+        
+        <div class="flex flex-col md:flex-row gap-4 mb-10">
+            <input 
+                type="text" 
+                id="search-input" 
+                placeholder="Busque por nome ou ingrediente..." 
+                class="flex-grow p-3 border-2 border-accent rounded-lg shadow-md focus:ring-accent focus:border-accent transition duration-300 bg-white"
+                oninput="filtrarCatalogo()"
+            >
+            
+            <select 
+                id="filter-select" 
+                class="p-3 border-2 border-accent rounded-lg shadow-md focus:ring-accent focus:border-accent transition duration-300 bg-white md:w-56"
+                onchange="filtrarCatalogo()"
+            >
+                <option value="">Filtrar por Tipo (Todos)</option>
+                <option value="Clássico">Clássico</option>
+                <option value="Tropical">Tropical</option>
+                <option value="Sem Álcool">Sem Álcool</option>
+                <option value="Aperitivo">Aperitivo</option>
+            </select>
+        </div>
+
+        <div id="catalogue-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            </div>
+        
+        <p id="no-results" class="text-center text-xl text-primary mt-10 hidden">
+            Nenhum coquetel encontrado com os critérios de busca. 😔
+        </p>
+    </main>
+    
+    <footer class="bg-primary text-secondary py-6 mt-10">
+        <p class="text-center text-sm">© 2025 The Cocktail Bar Project. Desenvolvido para fins acadêmicos.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

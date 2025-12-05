@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ℹ️ Sobre o Projeto - The Cocktail Bar</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#ca6212',
+                        'secondary': '#454545',
+                        'accent': '#C76E00',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-secondary text-primary font-sans">
+
+    <header class="bg-primary text-secondary shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold tracking-wider">The Cocktail Bar</h1>
+            <nav class="space-x-4 text-lg">
+                <a href="index.html" class="hover:text-accent transition duration-300">Catálogo</a>
+                <a href="sobre.html" class="hover:text-accent transition duration-300">Sobre</a>
+                <a href="contato.html" class="hover:text-accent transition duration-300">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="bg-white p-10 rounded-xl shadow-2xl">
+            <h2 class="text-4xl font-extrabold text-primary mb-6 border-b pb-3 border-accent">Nossa Missão</h2>
+            
+            <p class="text-lg mb-6 leading-relaxed">
+                O **The Cocktail Bar** nasceu como um projeto acadêmico focado em demonstrar a manipulação de dados JSON, eventos DOM e estilização moderna usando HTML, CSS e JavaScript. 
+            </p>
+            
+            <p class="text-lg mb-8 leading-relaxed">
+                Nosso objetivo é fornecer uma biblioteca elegante e funcional de receitas de bebidas e coquetéis, permitindo que o usuário encontre rapidamente a receita desejada através de filtros e buscas interativas.
+            </p>
+
+            <h3 class="text-2xl font-bold text-accent mt-8 mb-4">Tecnologias Utilizadas</h3>
+            <ul class="list-disc list-inside text-lg space-y-2 ml-4">
+                <li>**HTML5:** Estruturação semântica do conteúdo.</li>
+                <li>**Tailwind CSS:** Estilização utilitária para um design rápido e elegante.</li>
+                <li>**JavaScript ES6+:** Lógica de carregamento de dados e interatividade (filtros e busca).</li>
+                <li>**JSON:** Formato de dados para o catálogo de coquetéis.</li>
+            </ul>
+        </div>
+    </main>
+    
+    <footer class="bg-primary text-secondary py-6 mt-10">
+        <p class="text-center text-sm">© 2025 The Cocktail Bar Project. Desenvolvido para fins acadêmicos.</p>
+    </footer>
+
+</body>
+</html>

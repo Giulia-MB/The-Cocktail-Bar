@@ -1,18 +1,21 @@
-/* Este arquivo é reservado para estilos globais que não são facilmente 
-   aplicáveis via classes Tailwind. */
-
-/* Importação de Fontes Elegantes (Opcional) */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap');
 
-/* Sobrescrevendo as fontes padrões definidas no index.html */
-.font-sans {
-    font-family: 'Roboto', sans-serif;
-}
-.font-extrabold {
-    font-family: 'Playfair Display', serif;
+body {
+    background-color: #454545; /* cor secundária */
+    color: #ca6212; /* cor primária */
 }
 
-/* Adicionando um pequeno efeito visual aos inputs no foco */
+.cocktail-image {
+    object-fit: cover;
+    width: 100%;
+    height: 200px; /* Altura fixa para as imagens */
+}
+
+.cocktail-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(199, 110, 0, 0.5), 0 4px 6px -2px rgba(199, 110, 0, 0.2);
+}
+
 input:focus, select:focus, textarea:focus {
     box-shadow: 0 0 0 2px rgba(109, 89, 122, 0.5); /* Cor Accent com transparência */
 }
